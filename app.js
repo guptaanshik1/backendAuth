@@ -80,7 +80,6 @@ app.post('/login', async (req, res) => {
         }
 
         const user = await User.findOne({ email })
-
         // if (!user) {
         //     res.status(400).send("You are not registered.")
         // }
